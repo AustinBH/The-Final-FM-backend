@@ -9,6 +9,5 @@ Rails.application.routes.draw do
     post 'liked-songs' => 'liked_songs#create'
     post 'users' => 'users#create'
     get 'users' => 'users#index'
-    get 'users/:id' => 'users#show'
   end
 end
