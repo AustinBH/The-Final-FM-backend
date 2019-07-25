@@ -1,0 +1,2 @@
+ALGORITHM = 'your algorithm here'
+SECRET = 'your jwt signature secret here'
