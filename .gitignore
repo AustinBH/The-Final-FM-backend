@@ -25,3 +25,4 @@
 # Ignore api keys used to retrieve information
 /config/api_keys.rb
 /config/auth_tokens.rb
+.env
