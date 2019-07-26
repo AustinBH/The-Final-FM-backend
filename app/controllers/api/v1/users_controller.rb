@@ -2,7 +2,7 @@ class Api::V1::UsersController < ApplicationController
 
     def index
         users = User.all
-        render json: users, include: :songs, except: [:created_at, :updated_at]
+        render json: users, include: {:songs => {:include => [:artist]}}, except: [:created_at, :updated_at]
     end
 
     def show
