@@ -5,7 +5,8 @@ Rails.application.routes.draw do
     namespace :v1 do 
       get 'artists' => 'artists#index'
       get 'artists/:id' => 'artists#show'
-      get 'events-by-artist' => 'ticketmaster#search_by_artist' 
+      get 'events-by-artist' => 'ticketmaster#search_by_artist'
+      get 'events-by-city' => 'ticketmaster#search_by_city'
       get 'songs' => 'songs#index'
       get 'songs/:id' => 'songs#show'
       post 'liked-songs' => 'liked_songs#create'
