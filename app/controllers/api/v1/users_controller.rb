@@ -1,0 +1,18 @@
+class Api::V1::UsersController < ApplicationController
+
+    def index
+        users = User.all
+        render json: users, include: {:songs => {:include => [:artist]}}, except: [:created_at, :updated_at]
+    end
+
+    def show
+        user = User.find(params[:id])
+        render json: user, include: {:songs => {:include => [:artist]}}, except: [:created_at, :updated_at]
+    end
+
+    def create
+        user = User.create(username: params[:username])
+        render json: user
+    end
+
+end
