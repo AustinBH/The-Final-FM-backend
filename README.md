@@ -4,6 +4,8 @@
 
 This API was created for a react project. It uses the [Ticketmaster API](https://developer.ticketmaster.com/) to return event data and uses the [Last FM API](https://www.last.fm/api) to seed our database with song and artist information. Our API is not hosted at this time, but once it is I will go ahead and update this readme with the updated routes and a link to the API itself.
 
+The API is currently hosted here: 
+
 ## Routes
 
 ![](https://media.giphy.com/media/3ohs7Td2HosDPOLBGU/giphy.gif)
