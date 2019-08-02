@@ -12,16 +12,16 @@ Our API is currently hosted at https://final-fm-api.herokuapp.com/. While we do 
 
   Our API has artists, songs, and event data. All of these endpoints can be reached through similar routes.
   
-  * Artists
-    - Example Route: `https://final-fm-api.herokuapp.com/api/v1/artists`
+  * `Artists`
+    - Example Route: https://final-fm-api.herokuapp.com/api/v1/artists
     - This example route would return all of the artist information and each artists song information
     
-  * Songs
-    - Example Route: `https://final-fm-api.herokuapp.com/api/v1/songs`
+  * `Songs`
+    - Example Route: https://final-fm-api.herokuapp.com/api/v1/songs
     - This example route would return all of the song information and each song would also return it's artist information
     
-   * Events
-    - Example Route: `https://final-fm-api.herokuapp.com/events-by-artist?artist_name=billie`
+   * `Events`
+    - Example Route: https://final-fm-api.herokuapp.com/events-by-artist?artist_name=billie
     - This example route would return all tickemaster music events with the keyword billie
 
 ## Using the API
