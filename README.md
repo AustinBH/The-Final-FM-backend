@@ -2,7 +2,9 @@
 
 ![](https://media.giphy.com/media/RnX4q6yYDoYCI/giphy.gif)
 
-This API was created for a react project. It uses the [Ticketmaster API](https://developer.ticketmaster.com/) to return event data and uses the [Last FM API](https://www.last.fm/api) to seed our database with song and artist information. Our API is not hosted at this time, but once it is I will go ahead and update this readme with the updated routes and a link to the API itself.
+This API was created for a react project. It uses the [Ticketmaster API](https://developer.ticketmaster.com/) to return event data and uses the [Last FM API](https://www.last.fm/api) to seed our database with song and artist information.
+
+Our API is currently hosted at https://final-fm-api.herokuapp.com/. While we do not have a landing page at this time all of the below routes do return data. However, as it is hosted on heroku it can take a short while for the data to be returned if the server isn't already running.
 
 The API is currently hosted here: 
 
@@ -12,16 +14,16 @@ The API is currently hosted here:
 
   Our API has artists, songs, and event data. All of these endpoints can be reached through similar routes.
   
-  * Artists
-    - Example Route: 'http://localhost:3000/api/v1/artists'
+  * `Artists`
+    - Example Route: https://final-fm-api.herokuapp.com/api/v1/artists
     - This example route would return all of the artist information and each artists song information
     
-  * Songs
-    - Example Route: 'http://localhost:3000/api/v1/songs'
+  * `Songs`
+    - Example Route: https://final-fm-api.herokuapp.com/api/v1/songs
     - This example route would return all of the song information and each song would also return it's artist information
     
-   * Events
-    - Example Route: 'http://localhost:3000/api/v1/events-by-artist?artist_name=billie'
+  * `Events`
+    - Example Route: https://final-fm-api.herokuapp.com/events-by-artist?artist_name=billie
     - This example route would return all tickemaster music events with the keyword billie
 
 ## Using the API
