@@ -11,14 +11,6 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 
     resource '*',
       headers: :any,
-      methods: :get
-  end
-
-  allow do
-    origins 'https://the-final-fm.herokuapp.com'
-
-    resource '/api/v1/*',
-      headers: :any,
       methods: [:get, :post, :patch, :delete, :options, :put, :head]
   end
 end
